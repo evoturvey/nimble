@@ -52,7 +52,7 @@ class NimbleHeaderTagLib {
     }
 
 	// Imports default Nimble login UI css
-    def login = {attrs, body ->
+    def login = {attrs ->
         out << render(template: "/templates/header/loginsetup", contextPath: pluginContextPath, model:[nimblePath:pluginContextPath])
     }
 
